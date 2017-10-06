@@ -1,12 +1,14 @@
 # TexPax
 Texture packer for making composite images (combined gray-scale images)
 
-[Current Release for Windows (255kb)](https://raw.github.com/ChrisPikul510/texpax/master/dist/TexPax.exe)
+[Download current release for Windows (255kb)](https://raw.github.com/ChrisPikul510/texpax/master/dist/TexPax.exe)
 
 ## What is this?
 It's a tiny texture packer (not spritesheet or atlas). It builds composite textures from input images. I use this for combining texture maps that come with PBR Materials. When you bake, or download them, usually there's a bunch of different gray-scale images. So I use this to combine the common maps like Metallic, Roughness, Ambient Occlusion into one combined texture. This way, instead of loading in 3+ textures separately you're only using 1. It simply maps each gray-scale image to a specific color channel (R/G/B/A).
 
 As an added bonus, you can also combine diffuse/albedo with a separate alpha mask if needed. Or adding the height/displacement map to the alpha channel of your normal map.
+
+![Alt text](/images/example.png?raw=true "Example")
 
 ## How does it work?
 ![Alt text](/images/tutorial.png?raw=true "Explanation")
